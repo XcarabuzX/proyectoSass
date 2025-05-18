@@ -1,0 +1,34 @@
+// Importación de Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$font-family-base: 'Arial', sans-serif;
+
+// Reset básico
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  line-height: 1.6;
+}
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Estilos base
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+} 
