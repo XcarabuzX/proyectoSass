@@ -1,0 +1,56 @@
+@media (max-width: 600px) {
+  .bento-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: auto;
+  }
+  .card {
+    padding: 18px 16px;
+    width: 100%;
+    min-height: unset;
+  }
+  // Ordenar los cards en una sola columna según el orden visual de la imagen
+  .card--1 { order: 1; }
+  .card--2 { order: 2; }
+  .card--3 { order: 3; padding-left: 16px; padding-right: 16px;}
+  .card--4 { order: 4; }
+  .card--5 { order: 5; min-height: auto; padding-left: 16px; padding-right: 16px; }
+  .card--6 { order: 6; padding-left: 16px; padding-right: 16px;}
+  .card--7 { order: 7; padding-left: 16px; padding-right: 16px; }
+  .card--8 { order: 8; padding-left: 16px; padding-right: 16px; }
+  .card--9 { order: 9; display: block; }
+}
+
+// Desktop: grid layout
+@media (min-width: 601px) {
+  .bento-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr 1fr 1fr;
+    grid-template-rows: 1.1fr 0.8fr 1fr;
+    gap: 32px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-areas:
+      "card7 card1 card1 card4"
+      "card7 card2 card3 card4"
+      "card8 card6 card5 card5";
+    height: 90vh;
+    max-height: 900px;
+    align-items: stretch;
+  }
+  .card {
+    width: 100%;
+    min-height: 120px;
+  }
+  .card--1 { grid-area: card1; min-height: 320px; }
+  .card--2 { grid-area: card2; min-height: 180px; }
+  .card--3 { grid-area: card3; min-height: 180px; }
+  .card--4 { grid-area: card4; min-height: 180px; }
+  .card--5 { grid-area: card5; min-height: 180px; }
+  .card--6 { grid-area: card6; min-height: 180px; }
+  .card--7 { grid-area: card7; min-height: 380px; }
+  .card--8 { grid-area: card8; min-height: 380px; }
+  .card--9 { display: none; }
+} 

@@ -1,0 +1,35 @@
+// Reset básico
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  background: $color-bg-main;
+  color: $color-text-main;
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  @include flex-center;
+  min-height: 100vh;
+  background: $color-bg-main;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, minmax(120px, auto));
+  gap: 24px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+} 
