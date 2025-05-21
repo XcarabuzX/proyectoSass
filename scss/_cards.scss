@@ -1,0 +1,332 @@
+.card {
+  background: $color-card;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px 0 rgba(124, 92, 255, 0.08);
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: $color-text-main;
+  font-size: 1.1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: $color-primary;
+}
+
+.card--1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  background: $color-primary;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  .card-title-main {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    color: #fff;
+    span.highlight-yellow {
+      color: $color-accent;
+      font-weight: 700;
+    }
+    span.italic {
+      font-style: italic;
+    }
+  }
+  .stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    img {
+      width: 170px;
+      height: auto;
+      max-width: 100%;
+      image-rendering: auto;
+      display: block;
+    }
+  }
+  .reviews-text {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 0;
+    opacity: 0.9;
+  }
+}
+.card--2 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+  background: $color-card;
+  color: $color-text-main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding-top: 18px;
+  img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 18px;
+    margin-top: 0;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+  h2 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: $color-text-main;
+    margin: 0;
+    font-family: 'DM Sans', Arial, sans-serif;
+    letter-spacing: -0.5px;
+    line-height: 1.18;
+    text-align: left;
+    width: 100%;
+    padding-left: 10px;
+  }
+}
+.card--3 {
+  background: $color-yellow;
+  color: $color-text-main;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 22px;
+  padding-bottom: 0;
+  h2 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: $color-text-main;
+    margin: 0 0 18px 0;
+    font-family: 'DM Sans', Arial, sans-serif;
+    letter-spacing: -0.5px;
+    line-height: 1.18;
+    text-align: left;
+    width: 100%;
+    padding-left: 0;
+  }
+  img {
+    width: 82%;
+    max-width: 260px;
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px 0 rgba(124, 92, 255, 0.04);
+  }
+}
+.card--4 {
+  background: $color-purple-light;
+  color: $color-text-main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  h2 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: $color-text-main;
+    margin: 0 0 18px 0;
+    font-family: 'DM Sans', Arial, sans-serif;
+    letter-spacing: -0.5px;
+    line-height: 1.18;
+    text-align: center;
+    padding-left: 0;
+  }
+  img {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 18px auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px 0 rgba(124, 92, 255, 0.04);
+  }
+  p {
+    color: $color-text-main;
+    font-size: 1.08rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 8px;
+    opacity: 0.9;
+  }
+}
+
+.card--5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #7c5cff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px 0 rgba(124, 92, 255, 0.18);
+  padding: 38px 12px 34px 12px;
+
+  img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 28px auto;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px 0 rgba(124, 92, 255, 0.10);
+    background: transparent;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    line-height: 1.18;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+}
+
+.card--6 {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(124, 92, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 28px 18px 18px 18px;
+  min-height: 180px;
+
+  h2 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin: 0 0 8px 0;
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+
+  p {
+    font-size: 1.08rem;
+    color: #6c6c80;
+    margin: 0 0 18px 0;
+    font-weight: 500;
+  }
+
+  img {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 6px;
+    margin-left: 0;
+    border-radius: 12px;
+    display: block;
+    box-shadow: none;
+    background: transparent;
+  }
+}
+
+.card--7 {
+  background: #fff6e7;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(124, 92, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 32px 16px 24px 16px;
+  min-height: 200px;
+
+  h2 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #2d2d2d;
+    text-align: left;
+    margin: 0 0 24px 0;
+    line-height: 1.18;
+    letter-spacing: -0.5px;
+
+    span {
+      color: #7c5cff;
+      font-style: italic;
+      font-weight: 700;
+    }
+  }
+
+  img {
+    width: 100%;
+    max-width: 180px;
+    margin: 0 0 0 0;
+    display: block;
+    border-radius: 12px;
+    box-shadow: none;
+    background: transparent;
+    align-self: flex-start;
+  }
+}
+
+.card--8 {
+  background: #ffd36a;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(124, 92, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 32px 16px 24px 16px;
+  min-height: 240px;
+
+  h2 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #2d2d2d;
+    text-align: left;
+    margin: 0 0 24px 0;
+    line-height: 1.18;
+    letter-spacing: -0.5px;
+
+    span {
+      color: #7c5cff;
+      font-weight: 700;
+    }
+  }
+
+  img {
+    width: 100%;
+    max-width: 220px;
+    margin: 0 0 0 0;
+    display: block;
+    border-radius: 16px;
+    box-shadow: none;
+    background: transparent;
+    align-self: flex-start;
+  }
+}
+
+
+// Estilos para imágenes e iconos
+.card img, .card svg {
+  // max-width: 60px;
+  margin-bottom: 12px;
+}
+
+// Estilos para estrellas
+.stars {
+  display: flex;
+  gap: 4px;
+  margin: 12px 0 0 0;
+}
+.stars img {
+  width: 20px;
+  height: 20px;
+} 
