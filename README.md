@@ -57,4 +57,4 @@ _¡Próximamente!_
 ## 📎 Créditos
 
 Desafío de [Frontend Mentor](https://www.frontendmentor.io/).
-Desarrollado por [Tu Nombre](https://github.com/tuusuario).
+Desarrollado por [Felipe Gutierrez](https://github.com/XcarabuzX).
