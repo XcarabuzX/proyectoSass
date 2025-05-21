@@ -53,6 +53,7 @@ body {
   color: $color-text-main;
   min-height: 100vh;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 // Mixins
@@ -438,50 +439,57 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    height: auto;
   }
   .card {
-    padding: 18px 10px;
+    padding: 18px 16px;
     width: 100%;
     min-height: unset;
   }
   .container {
     padding: 0 4px;
   }
-  // Ordenar los cards en una sola columna según el orden visual de la imagen
   .card--1 { order: 1; }
   .card--2 { order: 2; }
-  .card--3 { order: 3; padding-left: 25px; padding-right: 25px;}
+  .card--3 { order: 3; padding-left: 16px; padding-right: 16px;}
   .card--4 { order: 4; }
-  .card--5 { order: 5; min-height: 400px; }
-  .card--6 { order: 6; padding-left: 25px; padding-right: 25px;}
-  .card--7 { order: 7; padding-left: 25px; padding-right: 25px; }
-  .card--8 { order: 8; padding-left: 25px; padding-right: 25x; }
+  .card--5 { order: 5; min-height: auto; padding-left: 16px; padding-right: 16px; }
+  .card--6 { order: 6; padding-left: 16px; padding-right: 16px;}
+  .card--7 { order: 7; padding-left: 16px; padding-right: 16px; }
+  .card--8 { order: 8; padding-left: 16px; padding-right: 16px; }
+  .card--9 { order: 9; display: block; }
 }
 
 // Desktop: grid layout
 @media (min-width: 601px) {
   .bento-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, minmax(120px, auto));
-    gap: 24px;
+    grid-template-columns: 0.9fr 1fr 1fr 1fr;
+    grid-template-rows: 1.1fr 0.8fr 1fr;
+    gap: 32px;
     width: 100%;
-    max-width: 400px;
+    max-width: 1200px;
     margin: 0 auto;
+    grid-template-areas:
+      "card7 card1 card1 card4"
+      "card7 card2 card3 card4"
+      "card8 card6 card5 card5";
+    height: 90vh;
+    max-height: 900px;
+    align-items: stretch;
   }
   .card {
     width: 100%;
     min-height: 120px;
   }
-  // Restaurar posiciones de grid
-  .card--1 { grid-column: 1 / 3; grid-row: 1 / 2; order: unset; }
-  .card--2 { grid-column: 3 / 4; grid-row: 1 / 3; order: unset; }
-  .card--3 { grid-column: 1 / 3; grid-row: 2 / 3; order: unset; }
-  .card--4 { grid-column: 1 / 2; grid-row: 3 / 4; order: unset; }
-  .card--5 { grid-column: 2 / 4; grid-row: 3 / 4; order: unset; }
-  .card--6 { grid-column: 1 / 3; grid-row: 4 / 5; order: unset; }
-  .card--7 { grid-column: 3 / 4; grid-row: 4 / 5; order: unset; }
-  .card--8 { grid-column: 1 / 2; grid-row: 5 / 7; order: unset; }
-  .card--9 { grid-column: 2 / 4; grid-row: 5 / 7; order: unset; }
+  .card--1 { grid-area: card1; min-height: 320px; }
+  .card--2 { grid-area: card2; min-height: 180px; }
+  .card--3 { grid-area: card3; min-height: 180px; }
+  .card--4 { grid-area: card4; min-height: 180px; }
+  .card--5 { grid-area: card5; min-height: 180px; }
+  .card--6 { grid-area: card6; min-height: 180px; }
+  .card--7 { grid-area: card7; min-height: 380px; }
+  .card--8 { grid-area: card8; min-height: 380px; }
+  .card--9 { display: none; }
 } 
 
